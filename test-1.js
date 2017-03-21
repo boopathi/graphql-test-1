@@ -1,15 +1,20 @@
-/**
- * Backend API structure
- *
- * Actual scenario:
- *
- * /users    - returns a list of users with minimal info like id and name
- * /user/:id - returns the complete information of the user
- * /foo      - has a field owner that has the user id
- *
- */
+const runServer = require("./server");
 
-module.exports = {
+const typeDefs = `
+type Query {
+  users: [User]
+  foo: Foo
+}
+type User {
+  id: ID
+  name: String
+}
+type Foo {
+  owner: User
+}
+`;
+
+const resolvers = {
   Query: {
     users() {
       return ["a", "b", "c"];
@@ -32,3 +37,5 @@ module.exports = {
     }
   }
 };
+
+runServer(typeDefs, resolvers);
