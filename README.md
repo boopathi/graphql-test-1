@@ -17,3 +17,6 @@ fragment user on User {
   id
 }
 ```
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/boopathi/graphql-test-1.svg)](https://greenkeeper.io/)
