@@ -30,6 +30,7 @@ in order to maintain the handling of a particular type at ONLY One place in the 
 + [test-2](test-2.js) - add a new type to solve that since only fields can be resolved
 + [test-3](test-3.js) - enums cannot be resolved by using type names
 + [test-4](test-4.js) - add another type to solve that
++ [test-5](test-5.js) - Or move the resolving logic away from resolver to achieve a better API
 
 Backend API structure
 
