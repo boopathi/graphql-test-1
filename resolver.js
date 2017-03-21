@@ -1,10 +1,21 @@
+/**
+ * Backend API structure
+ *
+ * Actual scenario:
+ *
+ * /users    - returns a list of users with minimal info like id and name
+ * /user/:id - returns the complete information of the user
+ * /foo      - has a field owner that has the user id
+ *
+ */
+
 module.exports = {
   Query: {
     users() {
       return ["a", "b", "c"];
     },
     foo() {
-      return "a";
+      return { owner: "a" };
     }
   },
   User: {
