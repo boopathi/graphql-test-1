@@ -3,6 +3,28 @@ const runServer = require("./server");
 // you do the same drill again,
 // create a new type for holding enum value
 
+/**
+ * and you can see that, when the actual model is -
+ *
+ * query a {
+ *   users {
+ *     server
+ *   }
+ * }
+ *
+ * with these simple additions, the query bloated to
+ *
+ * query b {
+ *   users {
+ *     details {
+ *       server {
+ *         enum
+ *       }
+ *     }
+ *   }
+ * }
+ */
+
 const typeDefs = `
 type Query {
   users: [User]
