@@ -1,0 +1,14 @@
+{
+  "name": "graphql-test-1",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Boopathi Rajaa <me@boopathi.in>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "graphql": "^0.9.1",
+    "graphql-server-express": "^0.6.0",
+    "graphql-tools": "^0.10.1"
+  }
+}

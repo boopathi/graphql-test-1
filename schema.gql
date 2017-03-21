@@ -1,0 +1,13 @@
+type Query {
+  users: [User]
+  foo: Foo
+}
+
+type User {
+  id: ID
+  name: String
+}
+
+type Foo {
+  owner: User
+}
